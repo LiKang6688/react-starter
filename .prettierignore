@@ -1,0 +1,13 @@
+LICENSE
+CODEOWNERS
+CHANGELOG.md
+dist
+coverage
+playwright-report
+.github/workflows/qr_*.yaml
+.depConfig.yaml
+component.yaml
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.svg
