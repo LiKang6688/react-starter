@@ -13,7 +13,7 @@
     "format:check": "prettier --check . --ignore-unknown",
     "format:write": "prettier --write . --ignore-unknown",
     "lint": "eslint --cache .",
-    "lint:write": "prettier --cache --check .",
+    "lint:write": "eslint --cache --check .",
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
