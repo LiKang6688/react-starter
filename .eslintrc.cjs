@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     "import/no-extraneous-dependencies": 0,
     "react/react-in-jsx-scope": 0,
+    "no-param-reassign": 1,
   },
   overrides: [
     {
@@ -17,7 +18,7 @@ module.exports = {
     {
       // Now we enable eslint-plugin-playwright only for matching e2e testing files!
       files: ["**/e2e/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-      extends: ["plugin:playwright/jest-playwright"],
+      extends: ["plugin:playwright/playwright-test"],
     },
   ],
 };

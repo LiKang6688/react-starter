@@ -49,6 +49,12 @@ const handlers = [
       ])
     )
   ),
+
+  rest.get("https://coins.com/:symbol", (req, res, ctx) => {
+    const { symbol } = req.params;
+
+    return res(ctx.json({ symbol }));
+  }),
 ];
 
 export default handlers;

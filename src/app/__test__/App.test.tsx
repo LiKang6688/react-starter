@@ -1,12 +1,14 @@
 /* eslint-disable testing-library/prefer-find-by */
-import { render, screen, waitFor } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+
+import renderWithProviders from "../../test-utils";
 
 import App from "../App";
 
 describe("App", () => {
   it("renders headline", async () => {
-    render(<App />);
+    renderWithProviders(<App />);
 
     // check if App components renders headline
     expect(screen.getByText(/Click on the Vite and React logos to learn more/i)).toBeInTheDocument();
