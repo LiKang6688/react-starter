@@ -17,7 +17,7 @@ module.exports = {
     {
       // Now we enable eslint-plugin-playwright only for matching e2e testing files!
       files: ["**/e2e/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
-      extends: ["plugin:playwright/jest-playwright"],
+      extends: ["plugin:playwright/playwright-test"],
     },
   ],
 };

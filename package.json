@@ -19,7 +19,7 @@
     "test:coverage": "vitest --coverage",
     "test:e2e": "playwright test",
     "tsc:check": "tsc",
-    "validate": "pnpm format & format:check & lint & tsc:check & test"
+    "validate": "pnpm format:check & pnpm lint & pnpm tsc:check & pnpm test"
   },
   "browserslist": [
     ">0.2%",
