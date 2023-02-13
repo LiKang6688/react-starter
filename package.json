@@ -73,7 +73,7 @@
     "eslint-plugin-testing-library": "5.10.1",
     "husky": "8.0.3",
     "jsdom": "21.1.0",
-    "lint-staged": "13.1.1",
+    "lint-staged": "13.1.2",
     "msw": "1.0.1",
     "prettier": "2.8.4",
     "prettier-plugin-organize-imports": "3.2.2",
