@@ -11,10 +11,15 @@ describe("App", () => {
     renderWithProviders(<App />);
 
     // check if App components renders headline
-    expect(screen.getByText(/Click on the Vite and React logos to learn more/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Click on the Vite and React logos to learn more/i)
+    ).toBeInTheDocument();
 
-    await waitFor(() => expect(screen.getByText(/Bitcoin/)).toBeInTheDocument(), {
-      timeout: 1200,
-    });
+    await waitFor(
+      () => expect(screen.getByText(/Bitcoin/)).toBeInTheDocument(),
+      {
+        timeout: 1200,
+      }
+    );
   });
 });

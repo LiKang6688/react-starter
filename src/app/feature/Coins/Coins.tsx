@@ -12,7 +12,10 @@ const getCoins = async () => {
 };
 
 const useCoins = () => {
-  const { data, isLoading, error } = useQuery({ queryKey: ["Coins"], queryFn: () => getCoins() });
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["Coins"],
+    queryFn: () => getCoins(),
+  });
 
   return {
     coins: data,
@@ -41,7 +44,11 @@ function Coins() {
 
   if (isLoading) return <div>Loading products...</div>;
 
-  return coins ? <CoinsSection coins={coins} /> : <div>Loading products...</div>;
+  return coins ? (
+    <CoinsSection coins={coins} />
+  ) : (
+    <div>Loading products...</div>
+  );
 }
 
 export default Coins;

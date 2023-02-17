@@ -23,7 +23,10 @@ function renderWithProviders(
   {
     preloadedState = {} as RootState,
     // Automatically create a store instance if no store was passed in
-    store = configureStore({ reducer: { coins: coinsReducer, counter: counterReducer }, preloadedState }),
+    store = configureStore({
+      reducer: { coins: coinsReducer, counter: counterReducer },
+      preloadedState,
+    }),
     ...renderOptions
   }: ExtendedRenderOptions = {}
 ) {

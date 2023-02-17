@@ -1,9 +1,9 @@
 {
-  "name": "vite-starter",
+  "name": "react-starter",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/LiKang6688/vite-starter.git"
+    "url": "git://github.com/LiKang6688/react-starter.git"
   },
   "author": "Li Kang <kkllpaul7766@gmail.com>",
   "type": "module",
