@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@playwright/test': 1.30.0
-  '@reduxjs/toolkit': 1.9.2
+  '@reduxjs/toolkit': 1.9.3
   '@tanstack/react-query': 4.24.9
   '@testing-library/dom': 9.0.0
   '@testing-library/jest-dom': 5.16.5
@@ -46,7 +46,7 @@ specifiers:
   vitest: 0.28.5
 
 dependencies:
-  '@reduxjs/toolkit': 1.9.2_k4ae6lp43ej6mezo3ztvx6pykq
+  '@reduxjs/toolkit': 1.9.3_k4ae6lp43ej6mezo3ztvx6pykq
   '@tanstack/react-query': 4.24.9_biqbaboplfbrettd7655fr4n2y
   axios: 1.3.3
   react: 18.2.0
@@ -887,8 +887,8 @@ packages:
       playwright-core: 1.30.0
     dev: true
 
-  /@reduxjs/toolkit/1.9.2_k4ae6lp43ej6mezo3ztvx6pykq:
-    resolution: {integrity: sha512-5ZAZ7hwAKWSii5T6NTPmgIBUqyVdlDs+6JjThz6J6dmHLDm6zCzv2OjHIFAi3Vvs1qjmXU0bm6eBojukYXjVMQ==}
+  /@reduxjs/toolkit/1.9.3_k4ae6lp43ej6mezo3ztvx6pykq:
+    resolution: {integrity: sha512-GU2TNBQVofL09VGmuSioNPQIu6Ml0YLf4EJhgj0AvBadRlCGzUWet8372LjvO4fqKZF2vH1xU0htAa7BrK9pZg==}
     peerDependencies:
       react: ^16.9.0 || ^17.0.0 || ^18
       react-redux: ^7.2.1 || ^8.0.2
