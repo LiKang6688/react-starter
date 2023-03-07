@@ -43,6 +43,10 @@ Mock Service Worker
 
 React Query
 
+## Client Side Routing
+
+React Router
+
 ## Code Formatter
 
 Prettier
