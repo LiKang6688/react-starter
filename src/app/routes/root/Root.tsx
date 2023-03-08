@@ -1,8 +1,8 @@
-import "./App.css";
 import Coins from "./feature/Coins/Coins";
 import Counter from "./feature/Counter/Counter";
+import "./Root.css";
 
-function App() {
+function Root() {
   return (
     <>
       <Counter />
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;

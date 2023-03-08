@@ -2,13 +2,13 @@
 import { screen, waitFor } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
-import renderWithProviders from "../../test-utils";
+import renderWithProviders from "../../../../test-utils";
 
-import App from "../App";
+import Root from "../Root";
 
-describe("App", () => {
+describe("Root", () => {
   it("renders headline", async () => {
-    renderWithProviders(<App />);
+    renderWithProviders(<Root />);
 
     // check if App components renders headline
     expect(
