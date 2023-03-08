@@ -4,8 +4,8 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./app/App";
-import Bpp from "./app/Bpp";
+import Bpp from "./app/routes/bpp/Bpp";
+import Root from "./app/routes/root/Root";
 import store from "./app/store";
 import "./main.css";
 
@@ -23,10 +23,18 @@ if (process.env.NODE_ENV === "development") {
   }
 }
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 10,
+    },
+  },
+});
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
   },
   {
     path: "/bpp",
@@ -34,12 +42,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-const queryClient = new QueryClient();
-
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={queryClient} contextSharing>
         <RouterProvider router={router} />
       </QueryClientProvider>
     </Provider>

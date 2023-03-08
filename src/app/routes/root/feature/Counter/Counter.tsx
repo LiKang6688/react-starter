@@ -1,5 +1,5 @@
-import reactLogo from "../../../assets/react.svg";
-import { useAppDispatch, useAppSelector } from "../../store";
+import reactLogo from "@/assets/react.svg";
+import { useAppDispatch, useAppSelector } from "../../../../store";
 import { increment } from "./CounterSlice";
 
 function Counter() {

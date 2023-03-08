@@ -1,4 +1,4 @@
-import store from "../../../store";
+import store from "../../../../../store";
 import { addNewCoin } from "../CoinsSlice";
 
 test("Adds a new coin", () => {

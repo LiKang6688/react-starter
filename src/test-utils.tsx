@@ -1,5 +1,6 @@
 import type { PreloadedState } from "@reduxjs/toolkit";
 import { configureStore } from "@reduxjs/toolkit";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import type { RenderOptions } from "@testing-library/react";
 import { render } from "@testing-library/react";
 import React, { PropsWithChildren } from "react";
@@ -8,8 +9,8 @@ import { Provider } from "react-redux";
 import type { RootState } from "./app/store";
 import appStore from "./app/store";
 // As a basic setup, import your same slice reducers
-import coinsReducer from "./app/feature/Coins/CoinsSlice";
-import counterReducer from "./app/feature/Counter/CounterSlice";
+import coinsReducer from "./app/routes/root/feature/Coins/CoinsSlice";
+import counterReducer from "./app/routes/root/feature/Counter/CounterSlice";
 
 // This type interface extends the default options for render from RTL, as well
 // as allows the user to specify other things such as initialState, store.
@@ -31,7 +32,15 @@ function renderWithProviders(
   }: ExtendedRenderOptions = {}
 ) {
   function Wrapper({ children }: PropsWithChildren<{}>): JSX.Element {
-    return <Provider store={store}>{children}</Provider>;
+    const queryClient = new QueryClient();
+
+    return (
+      <Provider store={store}>
+        <QueryClientProvider client={queryClient}>
+          {children}
+        </QueryClientProvider>
+      </Provider>
+    );
   }
 
   // Return an object with the store and all of RTL's query functions

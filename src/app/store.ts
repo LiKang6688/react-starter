@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
-import coinsReducer from "./feature/Coins/CoinsSlice";
-import counterReducer from "./feature/Counter/CounterSlice";
+import coinsReducer from "./routes/root/feature/Coins/CoinsSlice";
+import counterReducer from "./routes/root/feature/Counter/CounterSlice";
 
 const store = configureStore({
   reducer: {
