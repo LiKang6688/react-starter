@@ -78,7 +78,7 @@
     "jsdom": "21.1.0",
     "lint-staged": "13.1.2",
     "msw": "1.1.0",
-    "postcss": "8.4.21",
+    "postcss": "8.4.31",
     "prettier": "2.8.4",
     "prettier-plugin-organize-imports": "3.2.2",
     "prettier-plugin-packagejson": "2.4.3",
